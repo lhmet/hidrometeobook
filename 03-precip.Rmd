@@ -1,0 +1,24 @@
+# Precipitação {#precip}
+
+asd
+
+```{r satcloud, echo = FALSE, ref.label='satcloud', fig.cap='Fonte: .', include = FALSE}
+knitr::include_graphics('images/SatCloud.gif')
+```
+
+```{r setup-cap3, echo = FALSE, message=FALSE}
+options(stringsAsFactors = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+easypackages::libraries(c("vembedr", "knitr"))
+source("R/utils.R")
+```
+
+
+
+
+
+## Pluviometria
+
+TO DO
+
+

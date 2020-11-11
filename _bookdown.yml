@@ -1,6 +1,22 @@
 output_dir: "docs"
-book_filename: "hidrometeobook"
-delete_merged_file: true
+book_filename: hidrometeorologia
 language:
+  label:
+    fig: 'Figura '
+    tab: 'Tabela '
+    eq: 'Equação '
+    thm: 'Teorema '
+    lem: 'Lemma '
+    prp: 'Proposição '
+    cnj: 'Conjectura '
+    def: 'Definição '
+    exm: 'Exemplo '
+    exr: 'Exercício '
+    proof: 'Prova. '
+    remark: 'Remark. '
+    solution: 'Solução. '
   ui:
-    chapter_name: "Chapter "
+    edit: Edit
+    chapter_name: "Capítulo "
+new_session: yes
+repo: https://github.com/lhmet/hidrometeobook/

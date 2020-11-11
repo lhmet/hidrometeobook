@@ -1,1 +1,5 @@
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "Get Started" at https://bookdown.org/home/about/ for how to compile this example.
+Livro de Hidrometeorologia baseado nas notas de aula da disciplina Hidrometeorologia (FSC1087) do curso de Graduação em Meteorologia oferecido no Departamento de Física da Universidade Federal de Santa Maria (UFSM).
+
+https://lhmet.github.io/hidrometbook/
+
+[![Travis build status](https://travis-ci.org/lhmet/hidrometbook.svg?branch=master)](https://travis-ci.org/lhmet/hidrometbook)

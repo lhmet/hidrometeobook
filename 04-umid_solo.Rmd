@@ -1,0 +1,55 @@
+# Água no solo {#umidsolo}
+
+TO DO
+
+```{r setup4, echo = FALSE, message=FALSE}
+#options(stringsAsFactors = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+easypackages::libraries(c("vembedr", "knitr"))
+source("R/utils.R")
+```
+
+```{r, include=FALSE}
+#Os solos são caracterizados por uma típica sequência de horizontes  que constituem o perfil do solo.
+```
+
+
+## Propriedades do solo
+
+### Materiais
+
+### Hídricas
+
+## Textura e Estrutura
+
+
+## Movimento da água no solo
+
+## Infiltração
+
+Infiltração e percolação para solo franco-arenoso e franco-argiloso.
+
+```{r , fig.align='center', out.width='100%', results='asis'}
+#![teste](images/basin_defined.swf)
+#knitr::include_graphics('images/basin_defined.swf')
+swfhtml <- R2SWF::swf2html(swf.file = "images/soil_textures.swf", output = FALSE)
+cat(paste("<div align = \"%s\">\n", swfhtml, "\n</div>"))
+```
+
+
+Variações da infiltração com a textura do solo.
+
+```{r , fig.align='center', out.width='100%', results='asis'}
+#![teste](images/basin_defined.swf)
+#knitr::include_graphics('images/basin_defined.swf')
+swfhtml <- R2SWF::swf2html(swf.file = "images/inf_all.swf", output = FALSE)
+cat(paste("<div align = \"%s\">\n", swfhtml, "\n</div>"))
+```
+
+
+asd
+
+
+
+### Modelo de Green-Ampt
+

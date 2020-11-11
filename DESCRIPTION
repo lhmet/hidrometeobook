@@ -1,0 +1,11 @@
+Package: hidrometbook
+Title: Livro de Hidrometeorologia.
+Version: 0.0.1
+Imports: 
+    bookdown,
+    knitr,
+    rmarkdown,
+    dplyr,
+    R2SWF,
+    vembedr,
+    easypackages
