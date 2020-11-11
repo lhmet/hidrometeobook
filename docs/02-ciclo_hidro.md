@@ -176,33 +176,12 @@ Na molécula de água 2 átomos de Hidrogênio são unidos a 1 de Oxigênio (H~2
 <p class="caption">(\#fig:CH-estrutura-molec-agua)(ref:CH-estrutura-molec-agua)</p>
 </div>
 
-### Densidade da água
 
-A menor densidade do gelo (917 kg m^-3^) em comparação a água líquida ($\approx$ 1000 kg m^-3^) é devido ao arranjo das moléculas que tendem a se separar mais umas das outras do que na água líquida. Esta propriedade especial, explica porque o gelo flutua na superfície dos lagos, ao invés de afundar, o que permite manter a vida aquática em maiores profundidades. Confira a animação na Figura \@ref(fig:pqgeloflutua) para saber mais sobre porque a água é uma substância especial.
-
-(ref:pqgeloflutua) Animação 'Porque o gelo flutua na água?'. Fonte: https://ed.ted.com/lessons/why-does-ice-float-in-water-george-zaidan-and-charles-morton#review.
-
-<!--html_preserve--><div align="center">
-<div class="vembedr">
-<div>
-<iframe src="https://www.youtube.com/embed/UukRgqzk-KE" width="533" height="300" frameborder="0" allowfullscreen=""></iframe>
-</div>
-</div>
-</div><!--/html_preserve--><div class="figure" style="text-align: center">
-<img src="images/empty.png" alt="(ref:pqgeloflutua)" width="322" />
-<p class="caption">(\#fig:pqgeloflutua)(ref:pqgeloflutua)</p>
-</div>
-
-
-<!-- 
-Como a polaridade faz a água comportar-se estranhamente 
-https://www.youtube.com/watch?v=ASLUY2U1M-8 
--->
 ### Mudanças de fase da água
 
 A Figura \@ref(fig:CH-diag-fases-agua) mostra o diagrama termodinâmico de fases da água pura. De particular relevância é que as condições de pressão e temperatura da Terra no diagrama de fase estão localizadas em uma região em torno dos limites entre as três fases. E de fato, o sistema terrestre é o único em que a água existe nas suas 3 fases, gelo sólido, água líquida e vapor d'água, comparado as condições nos outros planetas. 
 
-\BeginKnitrBlock{rmdtip}<div class="rmdtip">O diagrama de fases da água define o domínio no espaço pressão-temperatura correspondente a uma fase particular da água, assim como os limites das transições entre as diferentes fases que envolvem troca de energia (calor latente, $\lambda$). As curvas representam condições de equilíbrio onde duas fases da água podem coexistir e a interseção de todas as três curvas é o **ponto triplo** (0,01 °C, 0,612 kPa). A curva de equilíbrio entre sólido e líquido representa **fusão (ou congelamento)**, a curva entre líquido e vapor representa **evaporação (ou condensação)** e a curva entre sólido e vapor representa **sublimação (ou deposição)**. As mudanças entre fases ocorrem a temperatura constante (e.g.: quando gelo derrete sua temperatura permanece a 0 °C). Entretanto, acima de um certo ponto, chamado ponto crítico (374°C), a distinção entre líquido e vapor não existe, independente da pressão (estado chamado super fluído). A água é uma das poucas substâncias que exibe </div>\EndKnitrBlock{rmdtip}
+\BeginKnitrBlock{rmdtip}<div class="rmdtip">O diagrama de fases da água define o domínio no espaço pressão-temperatura correspondente a uma fase particular da água, assim como os limites das transições entre as diferentes fases que envolvem troca de energia (calor latente, $\lambda$). As curvas representam condições de equilíbrio onde duas fases da água podem coexistir e a interseção de todas as três curvas é o **ponto triplo** (0,01 °C, 0,612 kPa). A curva de equilíbrio entre sólido e líquido representa **fusão (ou congelamento)**, a curva entre líquido e vapor representa **evaporação (ou condensação)** e a curva entre sólido e vapor representa **sublimação (ou deposição)**. As mudanças entre fases ocorrem a temperatura constante (e.g.: quando gelo derrete sua temperatura permanece a 0 °C). Entretanto, acima de um certo ponto, chamado ponto crítico (374°C), a distinção entre líquido e vapor não existe, independente da pressão (estado chamado super fluído).</div>\EndKnitrBlock{rmdtip}
 
 <!-- 
 A diferente inclinação da curva de equilíbrio gelo-água: 
@@ -235,10 +214,78 @@ https://bodell.mtchs.org/OnlineBio/BIOCD/text/chapter4/concept4.4.html
 https://openstax.org/books/biology-2e/pages/2-2-water
 -->
 
-As mudanças de fase da água estão associadas a um absorção/liberação considerável de energia na forma de calor latente. Esta é uma das principais razões pelas quais a água e o ciclo hidrológico são de importância primária para o sistema climático.
+As mudanças de fase da água estão associadas a um absorção/liberação considerável de energia na forma de calor latente. Esta energia não muda a temperatura da água, somente seu estado molecular. Esta é uma das principais razões pelas quais a água e o ciclo hidrológico são de importância primária para o sistema climático.
 
+
+
+### Densidade da água
+
+<!-- A maioria das substâncias ao se solidificarem diminuem de volume. Nessas substâncias um aumento de pressão acarreta aumento da temperatura de fusão. Isso ocorre porque o aumento da pressão diminui a separação entre as moléculas e o seu movimento molecular fica mais restrito. 
+
+A água é uma exceção quanto ao ponto de fusão (linha BD na Figura \@ref(fig:CH-diag-fases-agua)).
+
+https://educacao.uol.com.br/disciplinas/fisica/mudancas-de-estado-fisico--a-anomalia-da-agua.htm
+
+http://www.if.ufrgs.br/cref/amees/atmo.html
+
+-->
+
+
+A menor densidade do gelo (917 kg m^-3^) em comparação a água líquida ($\approx$ 1000 kg m^-3^) (Figura \@ref(fig:CH-dens-agua-gelo)) é devido a maneira como as pontes de Hidrogênio são arranjadas quando água congela. No gelo, as moléculas tendem a se separar mais umas das outras do que na água líquida. Isso significa que a água se expande quando congela (maior de volume, menor densidade).
+
+<!-- A energia interna (energia cinética, movimento térmico molecular) das moléculas diminui com a temperatura, o que implica em uma separação média das moléculas menor. Abaixo de 4°C, este efeito faz com que pontes de H se formem com maior frequência do que se quebrem (energia cinética < energia das ligações de H). -->
+
+(ref:CH-dens-agua-gelo) Densidade da água e do gelo em função da temperatura.
+
+<div class="figure" style="text-align: center">
+<img src="images/Density_of_ice_and_water_(en).svg" alt="(ref:CH-dens-agua-gelo)" width="90%" />
+<p class="caption">(\#fig:CH-dens-agua-gelo)(ref:CH-dens-agua-gelo)</p>
+</div>
+
+Esta propriedade especial, explica porque o gelo flutua na superfície dos lagos, ao invés de afundar, o que permite manter a vida aquática em maiores profundidades. Confira a animação na Figura \@ref(fig:pqgeloflutua) para compreender melhor esse comportamento peculiar da água.
+
+(ref:pqgeloflutua) Animação 'Porque o gelo flutua na água?'. Fonte: https://ed.ted.com/lessons/why-does-ice-float-in-water-george-zaidan-and-charles-morton#review.
+
+<!--html_preserve--><div align="center">
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/UukRgqzk-KE" width="533" height="300" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+</div><!--/html_preserve--><div class="figure" style="text-align: center">
+<img src="images/empty.png" alt="(ref:pqgeloflutua)" width="322" />
+<p class="caption">(\#fig:pqgeloflutua)(ref:pqgeloflutua)</p>
+</div>
+
+Esta propriedade anômala da água também explica porque a temperatura de fusão (linha BD na Figura \@ref(fig:CH-diag-fases-agua)) diminui com o aumento da pressão.
+
+<!-- 
+Com a maioria dos outros líquidos, a solidificação—que ocorre quando a temperatura cai e a energia cinética (movimento) das moléculas é reduzida—permite que as moléculas se compactem mais firmemente do que na forma líquida, o que confere ao sólido uma densidade maior do que a do líquido.
+
+
+
+
+Como a polaridade faz a água comportar-se estranhamente 
+https://www.youtube.com/watch?v=ASLUY2U1M-8 
+-->
 
 ### Capacidade térmica
+
+A capacidade térmica é a quantidade de energia necessária para alterar uma dada massa da substância em 1 °C. Para a água, a capacidade de calor específico (cp) em T = 0 °C é 4216 J kg^-1^ K^-1^, praticamente o dobro da solo. Como muitas propriedades da água, isso pode variar com a temperatura, conforme mostrado na Tabela abaixo.
+
+| Temperatura (°C) | Densidade (Kg m^-3^) | Capacidade térmica (J Kg^-1^ K^-1^) |
+|------------------|----------------------|-------------------------------------|
+| 0                | 999.87               | 4216                                |
+| 15               | 999.13               | 4184                                |
+| 30               | 9995.67              | 4177                                |
+
+
+Esta é a maior capacidade de calor específico de qualquer substância conhecida. Então, por que essa propriedade é tão importante ao clima na Terra? O principal efeito é amortecer as mudanças de temperatura. Grande parte da energia solar que entra no topo da atmosfera da Terra atinge a superfície, uma fração significativa da qual é coberta por água. A alta capacidade de calor da água significa que grande parte dessa energia pode ser absorvida com mudanças de temperatura relativamente pequenas. Um planeta sem água aqueceria muito mais significativamente com a mesma entrada de energia. Este efeito também pode ser visto em padrões climáticos regionais. As áreas costeiras perto de grandes corpos d'água geralmente têm um clima mais ameno (isto é, relativamente pequeno variações de temperatura) em comparação com as do interior, devido à capacidade de moderação do corpo d'água. Em outro exemplo, o corpo humano aproveita a alta capacidade de calor da água para regular a temperatura do corpo dentro da pequena faixa necessária para o funcionamento saudável.
+
+
+<!-- https://open.oregonstate.education/climatechange/chapter/processes/ -->
+
+
 
 <!-- Moderação da temperatura Se você já queimou o dedo em uma panela de metal enquanto esperava a água ferver, você sabe que a água aquece muito mais lentamente do que o metal. Na verdade, por causa das ligações de hidrogênio, a água tem uma capacidade melhor de resistir às mudanças de temperatura do que a maioria das outras substâncias. Para entender por quê, primeiro é útil saber um pouco sobre energia e temperatura. A energia térmica é a quantidade total de energia associada ao movimento aleatório de átomos e moléculas em uma amostra de matéria. A temperatura é uma medida da energia média do movimento aleatório das partículas de uma substância. Quando duas substâncias diferem em temperatura, a energia térmica na forma de calor é transferida da substância mais quente para a mais fria. -->
 
@@ -248,6 +295,10 @@ As mudanças de fase da água estão associadas a um absorção/liberação cons
 
 
 ### Calor latente
+
+Outro conjunto chave de propriedades da água são os chamados calores latentes associados à transformação de fase. Embora a capacidade de calor seja a energia necessária para alterar a temperatura de uma determinada substância (ou seja, água líquida), os aquecimentos latentes são a energia associada a uma mudança de fase de temperatura constante (isotérmica). O calor latente de vaporização (Lv) é a energia consumida na transformação de água líquida em vapor d'água (ou liberada na conversão de vapor em líquido) e tem um valor (em T = 0 ° C) de Lv = 2,5 × 106 J kg-1 . Esta propriedade tem um ligeiro
+variação com a temperatura (por exemplo, é igual a 2,25 x 106 J kg-1 a 100 ° C), mas para a maioria das aplicações, podemos usar este valor nominal. O calor latente de fusão (Lf) é a energia consumida na transformação de água sólida (gelo) em água líquida (ou liberada na conversão de líquido em gelo) e tem um valor nominal de Lf = 3,34 × 105 J kg-1. Observe que isso é quase uma ordem de magnitude menor que o calor latente de vaporização. O calor latente de sublimação (Ls) é a energia consumida na transformação do gelo em vapor d'água (ou liberada na conversão do vapor em sólido) e possui um valor nominal de Ls = 2,85 × 106 J kg-1. As grandes quantidades de energia necessárias para quebrar as ligações de hidrogênio entre as moléculas de água tornam essas propriedades muito altas em comparação com outras
+substâncias. O fato de esses calores latentes serem tão grandes para a água, aliado ao fato de as transformações de fase serem bastante comuns no sistema terrestre, resultam em fontes de energia significativas e sumidouros no ciclo hidrológico. Especificamente, o aquecimento latente é crítico na transferência de energia entre a superfície e a atmosfera e no transporte global de calor.
 
 <!-- A água também modera a temperatura por meio da evaporação, como quando você transpira. A evaporação ocorre quando as moléculas na superfície de um líquido escapam para o ar. Conforme as moléculas de água evaporam, o líquido restante fica mais frio. O processo de evaporação requer energia térmica para quebrar as ligações de hidrogênio e liberar as moléculas de água no ar. Na transpiração, essa energia é absorvida pela pele, resfriando o corpo. -->
 
