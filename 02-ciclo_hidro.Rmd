@@ -138,6 +138,13 @@ A região de encontro entre um rio e oceano é chamada de [estuário](https://pt
 
 ```{r water-earth-data}
 load("data/water_earth.rda")
+water_earth[[1]] <- as.character(water_earth[[1]])
+ #for (col in colnames(water_earth)){
+  #Encoding(water_earth[[1]]) <- "'ISO-8859-1'"
+  Encoding(water_earth[[1]]) <- "UTF-8"
+  Encoding(names(water_earth)) <- "UTF-8"
+#x <- water_earth[, 1]
+#Encoding(x)
 ```
 
 A `r small_caps("Hidrosfera")` envolve a água contida no planeta Terra armazenada em rios, lagos, oceanos, solo e ar. A Terra armazena $\approx$ `r round(sum(water_earth[-2, 2])/10^6)` milhões  de km^3^ de água (soma dos volumes de água doce e salgada da Tabela \@ref(tab:water-earth-table)). Comparado ao volume da Terra (1,08321 $\times$ 10^12^ km^3^), esse volume de água é $\approx$ `r gsub("\\.", ",", as.character(round((1377*10^6)/(1.08*10^12)*100, 2)))`% do volume do planeta (Figura \@ref(fig:wateravail)).
@@ -169,7 +176,7 @@ A ínfima fração relativa do total de água doce restante (0,42 %)  correspond
 
 [^1]: Estas estimativas são aproximadas e diferentes fontes produzirão valores diferentes.
 
-```{r water-earth-table}
+```{r water-earth-table, encoding = "UTF-8"}
 #load("data/water_earth.rda")
 knitr::kable(
   water_earth,

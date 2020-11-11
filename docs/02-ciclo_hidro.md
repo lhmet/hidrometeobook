@@ -142,15 +142,15 @@ A ínfima fração relativa do total de água doce restante (0,42 %)  correspond
 
 Table: (\#tab:water-earth-table)Água armazenada no planeta Terra. Adaptado de @Trenberth2007.
 
-|ReservatÃ³rio                | Volume (Km^3^)| Total de Ã¡gua (%)| Total de Ã¡gua doce (%)|
-|:----------------------------|--------------:|------------------:|-----------------------:|
-|Oceano                       |  1.335.040.000|             97,000|                      NA|
-|Ãgua doce                   |     41.984.700|              3,000|                      NA|
-|Ãreas congeladas            |     26.372.000|              1,900|                   62,80|
-|Ãgua subterrÃ¢nea           |     15.300.000|              1,100|                   36,40|
-|Lagos, Rios e Ã¡reas Ãºmidas |        178.000|              0,013|                    0,42|
-|Ãgua no solo                |        122.000|              0,009|                    0,29|
-|Atmosfera                    |         12.700|              0,001|                    0,03|
+|Reservatório               | Volume (Km^3^)| Total de água (%)| Total de água doce (%)|
+|:--------------------------|--------------:|-----------------:|----------------------:|
+|Oceano                     |  1.335.040.000|            97,000|                     NA|
+|Água doce                  |     41.984.700|             3,000|                     NA|
+|Áreas congeladas           |     26.372.000|             1,900|                  62,80|
+|Água subterrânea           |     15.300.000|             1,100|                  36,40|
+|Lagos, Rios e áreas úmidas |        178.000|             0,013|                   0,42|
+|Água no solo               |        122.000|             0,009|                   0,29|
+|Atmosfera                  |         12.700|             0,001|                   0,03|
 
 Em média 12.700 km^3^ (25 mm) de vapor d’água por ano existem na atmosfera. Para acomodar os 577.000 km^3^ de evaporação (veja seção \@ref(BHglobal)), o volume total de água contida na atmosfera deve ser reciclado (da atmosfera para superfície terrestre e oceano) mais de 40 vezes por ano ou $\approx$ 8 dias. Isto é conhecido como tempo de residência ou de renovação (visto em mais detalhes na seção \@ref(balhid)).
 
