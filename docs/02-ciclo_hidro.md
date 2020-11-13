@@ -280,7 +280,7 @@ A capacidade térmica é a quantidade de energia necessária para alterar uma da
 | 30               | 9995.67              | 4177                                |
 
 
-Esta é a maior capacidade de calor específico de qualquer substância conhecida. Então, por que essa propriedade é tão importante ao clima na Terra? O principal efeito é amortecer as mudanças de temperatura. Grande parte da energia solar que entra no topo da atmosfera da Terra atinge a superfície, uma fração significativa da qual é coberta por água. A alta capacidade de calor da água significa que grande parte dessa energia pode ser absorvida com mudanças de temperatura relativamente pequenas. Um planeta sem água aqueceria muito mais significativamente com a mesma entrada de energia. Este efeito também pode ser visto em padrões climáticos regionais. As áreas costeiras perto de grandes corpos d'água geralmente têm um clima mais ameno (isto é, relativamente pequeno variações de temperatura) em comparação com as do interior, devido à capacidade de moderação do corpo d'água. Em outro exemplo, o corpo humano aproveita a alta capacidade de calor da água para regular a temperatura do corpo dentro da pequena faixa necessária para o funcionamento saudável.
+Esta é a maior capacidade de calor específico de qualquer substância conhecida. Então, por que essa propriedade é tão importante ao clima na Terra? O principal efeito é amortecer as mudanças de temperatura. Grande parte da energia solar que entra no topo da atmosfera da Terra atinge a superfície, uma fração significativa da qual é coberta por água. A alta capacidade de calor da água significa que grande parte dessa energia pode ser absorvida com mudanças de temperatura relativamente pequenas. Um planeta sem água aqueceria muito mais significativamente com a mesma entrada de energia. Este efeito também pode ser visto em padrões climáticos regionais. As áreas costeiras perto de grandes corpos d'água geralmente têm um clima mais ameno (isto é, baixa amplitude térmica diária) em comparação com as do interior, devido à capacidade de moderação do corpo d'água. Em outro exemplo, o corpo humano aproveita a alta capacidade de calor da água para regular a temperatura do corpo dentro da pequena faixa necessária para o funcionamento saudável.
 
 
 <!-- https://open.oregonstate.education/climatechange/chapter/processes/ -->
@@ -296,9 +296,19 @@ Esta é a maior capacidade de calor específico de qualquer substância conhecid
 
 ### Calor latente
 
-Outro conjunto chave de propriedades da água são os chamados calores latentes associados à transformação de fase. Embora a capacidade de calor seja a energia necessária para alterar a temperatura de uma determinada substância (ou seja, água líquida), os aquecimentos latentes são a energia associada a uma mudança de fase de temperatura constante (isotérmica). O calor latente de vaporização (Lv) é a energia consumida na transformação de água líquida em vapor d'água (ou liberada na conversão de vapor em líquido) e tem um valor (em T = 0 ° C) de Lv = 2,5 × 106 J kg-1 . Esta propriedade tem um ligeiro
-variação com a temperatura (por exemplo, é igual a 2,25 x 106 J kg-1 a 100 ° C), mas para a maioria das aplicações, podemos usar este valor nominal. O calor latente de fusão (Lf) é a energia consumida na transformação de água sólida (gelo) em água líquida (ou liberada na conversão de líquido em gelo) e tem um valor nominal de Lf = 3,34 × 105 J kg-1. Observe que isso é quase uma ordem de magnitude menor que o calor latente de vaporização. O calor latente de sublimação (Ls) é a energia consumida na transformação do gelo em vapor d'água (ou liberada na conversão do vapor em sólido) e possui um valor nominal de Ls = 2,85 × 106 J kg-1. As grandes quantidades de energia necessárias para quebrar as ligações de hidrogênio entre as moléculas de água tornam essas propriedades muito altas em comparação com outras
-substâncias. O fato de esses calores latentes serem tão grandes para a água, aliado ao fato de as transformações de fase serem bastante comuns no sistema terrestre, resultam em fontes de energia significativas e sumidouros no ciclo hidrológico. Especificamente, o aquecimento latente é crítico na transferência de energia entre a superfície e a atmosfera e no transporte global de calor.
+No diagrama de fases vimos que energia é necessária para derreter gelo e evaporar água. Esta energia não muda com a temperatura da água, mas sim seu o estado molecular. Por isto essa energia é chamada **calor latente**. Ela fica armazenada nas moléculas de água e é liberada no processo reverso, como por exemplo, quando o vapor d'água condensa para forma líquida.
+
+
+<!-- Outro conjunto chave de propriedades da água são os chamados calores latentes associados à transformação de fase. Embora a capacidade de calor seja a energia necessária para alterar a temperatura de uma determinada substância (ou seja, água líquida), os aquecimentos latentes são a energia associada a uma mudança de fase de temperatura constante (isotérmica). -->
+
+O calor latente de vaporização (Lv) é a energia consumida na transformação de água líquida em vapor d'água (ou liberada na conversão de vapor em líquido) e tem um valor (em T = 0 ° C) de Lv = 2,5 × 106 J kg^-1^ . Esta propriedade tem leve
+variação com a temperatura (por exemplo, é igual a 2,25 x 106 J kg^-1^ a 100° C), mas para a maioria das aplicações, podemos usar este valor nominal. 
+
+O calor latente de fusão (Lf) é a energia consumida na transformação de água sólida (gelo) em água líquida (ou liberada na conversão de líquido em gelo) e tem um valor nominal de Lf = 3,34 × 105 J kg^-1^. Observe que isso é quase uma ordem de magnitude menor que o calor latente de vaporização. 
+
+O calor latente de sublimação (Ls) é a energia consumida na transformação do gelo em vapor d'água (ou liberada na conversão do vapor em sólido) e possui um valor nominal de Ls = 2,85 × 106 J kg^-1^. 
+
+As grandes quantidades de energia necessárias para quebrar as ligações de hidrogênio entre as moléculas de água tornam essas propriedades muito maiores em comparação com outras substâncias. O fato de esses calores latentes serem tão grandes para a água, aliado ao fato de as transformações de fase serem bastante comuns no sistema terrestre, resultam em fontes e sumidores de energia significativas para ciclo hidrológico. Especificamente, o calor latente é crítico na transferência de energia entre a superfície e a atmosfera e no transporte global de calor.
 
 <!-- A água também modera a temperatura por meio da evaporação, como quando você transpira. A evaporação ocorre quando as moléculas na superfície de um líquido escapam para o ar. Conforme as moléculas de água evaporam, o líquido restante fica mais frio. O processo de evaporação requer energia térmica para quebrar as ligações de hidrogênio e liberar as moléculas de água no ar. Na transpiração, essa energia é absorvida pela pele, resfriando o corpo. -->
 
@@ -395,6 +405,39 @@ a qual pode ser simplesmente escrita como:
   \frac{dS}{dt} = \sum_{i}{I_{i}} - \sum_{i}{O_{i}}
   (\#eq:contin2)
 \end{equation}
+
+onde $S$ é o volume de armazenamento e o lado direito é o soma das entradas ($I_i$) menos a soma das saída ($O_i$) em termos de fluxo volumétrico  através da superfície do volume de controle. Um ponto-chave é que apenas fluxos através do
+superfície de controle precisam ser considerada no balanço de massa equação. Fluxos internos não contribuem para mudanças no armazenamento de massa/volume. Este fato é frequentemente usado na construção de um volume de controle para eliminar fluxos que são desconhecidos tornando-os fluxos internos. Portanto, para aplicar a equação adequadamente, um volume de controle deve ser definido explicitamente. Outro simplificação bastante usada é a de estado estacionário, situação em que o termo de armazenamento é igual a zero, produzindo:
+
+\begin{equation}
+  \sum_{i}{I_{i}} = \sum_{i}{O_{i}}
+  (\#eq:estac)
+\end{equation}
+
+
+No contexto de aplicações do balanço massa (ou outras), várias formas de fluxos são usadas​e é importante diferenciá-los, assim como suas unidades. Fluxos de massa (ou seja, usados​na equação \@ref(eq:vol-control-int)) têm unidades de
+massa/tempo (por exemplo, kg s^-1^). Fluxos volumétricos (ou seja, usados​na Equação
+\@ref(eq:estac) têm unidades de volume/tempo (por exemplo, m^3^ s^-1^). Para converter entre os dois, a densidade do fluido pode ser usada, ou seja, para
+água:
+
+$$\frac{kg}{s} \times \frac{1}{\rho} = \frac{m^{3}}{s}; \rho = 1000\:   kg\:  m^{-3}$$
+
+Muitas vezes, a densidade de fluxo é usada no lugar do fluxo, que é simplesmente, ou o fluxo de massa ou volumétrico, normalizado pela área da seção transversal apropriada, através da qual o fluxo está ocorrendo, ou seja
+
+$$Massa: \frac{kg}{s} \times \frac{1}{A} \rightarrow \frac{kg}{m^{2}s}$$
+
+$$Volume: \frac{m^{3}}{s} \times \frac{1}{A} \rightarrow \frac{m}{s} ou \left ( \frac{mm}{dia}, \: \frac{m}{ano} \right )$$
+
+onde, como mostrado acima, se a densidade do fluxo de massa for conhecida, a densidade de fluxo volumétrico pode ser obtida dividindo-se pela
+densidade da água. A densidade de fluxo volumétrica é uma forma comum de expressar fluxos em hidrometeorologia. Por exemplo, a precipitação média anual em Santa Maria é 1100 mm ano^-1^, que está
+implícito ocorrer sobre uma determinada área. Para obter o fluxo volumétrico real seria necessário multiplicar pela área da superfície de Santa Maria-RS, sobre a qual a densidade de fluxo ocorre.
+
+Como será discutido em mais detalhes posteriormente, os fluxos de água e energia são diretamente relacionados. O exemplo mais relevante é que o fluxo de evaporação está diretamente ligado ao fluxo de calor associado a mudança de fase.
+Por exemplo, o fluxo de calor latente, associado à mudança de fase é simplesmente a densidade de fluxo de massa multiplicada pelo calor latente de vaporização: 
+
+$$Fluxo\: de\: energia = \lambda_{v} \times Fluxo\: de\: massa; \lambda_{v} = 2,5 \times 10^6\: J\: kg^{-1}$$
+
+onde as unidades de W m^-2^ são as mais comumente usadas para fluxos de energia (na verdade, densidades de fluxo) em hidrometeorologia.
 
 
 \BeginKnitrBlock{rmdnote}<div class="rmdnote">Um conceito útil envolvendo o tamanho dos reservatórios e os fluxos entre eles é o <span style="font-variant:small-caps;">Tempo de Residência</span> $T_{r}$. O $T_{r}$ [T] é uma medida de quanto tempo, em mmédia, uma molécula de água gasta dentro reservatório antes de mover-se para outro reservatório do <span style="font-variant:small-caps;">Ciclo Hidrológico</span>. O $T_{r}$ é facilmente calculado para **sistemas estacionários**, ou seja quando o fluxo de entrada e saída são idênticos:

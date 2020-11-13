@@ -442,6 +442,39 @@ a qual pode ser simplesmente escrita como:
   (\#eq:contin2)
 \end{equation}
 
+onde $S$ é o volume de armazenamento e o lado direito é o soma das entradas ($I_i$) menos a soma das saída ($O_i$) em termos de fluxo volumétrico  através da superfície do volume de controle. Um ponto-chave é que apenas fluxos através do
+superfície de controle precisam ser considerada no balanço de massa equação. Fluxos internos não contribuem para mudanças no armazenamento de massa/volume. Este fato é frequentemente usado na construção de um volume de controle para eliminar fluxos que são desconhecidos tornando-os fluxos internos. Portanto, para aplicar a equação adequadamente, um volume de controle deve ser definido explicitamente. Outro simplificação bastante usada é a de estado estacionário, situação em que o termo de armazenamento é igual a zero, produzindo:
+
+\begin{equation}
+  \sum_{i}{I_{i}} = \sum_{i}{O_{i}}
+  (\#eq:estac)
+\end{equation}
+
+
+No contexto de aplicações do balanço massa (ou outras), várias formas de fluxos são usadas​e é importante diferenciá-los, assim como suas unidades. Fluxos de massa (ou seja, usados​na equação \@ref(eq:vol-control-int)) têm unidades de
+massa/tempo (por exemplo, kg s^-1^). Fluxos volumétricos (ou seja, usados​na Equação
+\@ref(eq:estac) têm unidades de volume/tempo (por exemplo, m^3^ s^-1^). Para converter entre os dois, a densidade do fluido pode ser usada, ou seja, para
+água:
+
+$$\frac{kg}{s} \times \frac{1}{\rho} = \frac{m^{3}}{s}; \rho = 1000\:   kg\:  m^{-3}$$
+
+Muitas vezes, a densidade de fluxo é usada no lugar do fluxo, que é simplesmente, ou o fluxo de massa ou volumétrico, normalizado pela área da seção transversal apropriada, através da qual o fluxo está ocorrendo, ou seja
+
+$$Massa: \frac{kg}{s} \times \frac{1}{A} \rightarrow \frac{kg}{m^{2}s}$$
+
+$$Volume: \frac{m^{3}}{s} \times \frac{1}{A} \rightarrow \frac{m}{s} ou \left ( \frac{mm}{dia}, \: \frac{m}{ano} \right )$$
+
+onde, como mostrado acima, se a densidade do fluxo de massa for conhecida, a densidade de fluxo volumétrico pode ser obtida dividindo-se pela
+densidade da água. A densidade de fluxo volumétrica é uma forma comum de expressar fluxos em hidrometeorologia. Por exemplo, a precipitação média anual em Santa Maria é 1100 mm ano^-1^, que está
+implícito ocorrer sobre uma determinada área. Para obter o fluxo volumétrico real seria necessário multiplicar pela área da superfície de Santa Maria-RS, sobre a qual a densidade de fluxo ocorre.
+
+Como será discutido em mais detalhes posteriormente, os fluxos de água e energia são diretamente relacionados. O exemplo mais relevante é que o fluxo de evaporação está diretamente ligado ao fluxo de calor associado a mudança de fase.
+Por exemplo, o fluxo de calor latente, associado à mudança de fase é simplesmente a densidade de fluxo de massa multiplicada pelo calor latente de vaporização: 
+
+$$Fluxo\: de\: energia = \lambda_{v} \times Fluxo\: de\: massa; \lambda_{v} = 2,5 \times 10^6\: J\: kg^{-1}$$
+
+onde as unidades de W m^-2^ são as mais comumente usadas para fluxos de energia (na verdade, densidades de fluxo) em hidrometeorologia.
+
 
 ```{block2, tempo-residencia, type='rmdnote', echo = TRUE}
 Um conceito útil envolvendo o tamanho dos reservatórios e os fluxos entre eles é o <span style="font-variant:small-caps;">Tempo de Residência</span> $T_{r}$. O $T_{r}$ [T] é uma medida de quanto tempo, em mmédia, uma molécula de água gasta dentro reservatório antes de mover-se para outro reservatório do <span style="font-variant:small-caps;">Ciclo Hidrológico</span>. O $T_{r}$ é facilmente calculado para **sistemas estacionários**, ou seja quando o fluxo de entrada e saída são idênticos:

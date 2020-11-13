@@ -24,7 +24,7 @@
 <meta name="author" content="Jônatan Tatsch" />
 
 
-<meta name="date" content="2020-11-11" />
+<meta name="date" content="2020-11-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -179,6 +179,27 @@ Figura 2.9: Esquema básico de um <span class="smallcaps">volume de controle</sp
   \frac{dS}{dt} = \sum_{i}{I_{i}} - \sum_{i}{O_{i}}
   \tag{2.4}
 \end{equation}\]</span></p>
+<p>onde <span class="math inline">\(S\)</span> é o volume de armazenamento e o lado direito é o soma das entradas (<span class="math inline">\(I_i\)</span>) menos a soma das saída (<span class="math inline">\(O_i\)</span>) em termos de fluxo volumétrico através da superfície do volume de controle. Um ponto-chave é que apenas fluxos através do
+superfície de controle precisam ser considerada no balanço de massa equação. Fluxos internos não contribuem para mudanças no armazenamento de massa/volume. Este fato é frequentemente usado na construção de um volume de controle para eliminar fluxos que são desconhecidos tornando-os fluxos internos. Portanto, para aplicar a equação adequadamente, um volume de controle deve ser definido explicitamente. Outro simplificação bastante usada é a de estado estacionário, situação em que o termo de armazenamento é igual a zero, produzindo:</p>
+<p><span class="math display" id="eq:estac">\[\begin{equation}
+  \sum_{i}{I_{i}} = \sum_{i}{O_{i}}
+  \tag{2.5}
+\end{equation}\]</span></p>
+<p>No contexto de aplicações do balanço massa (ou outras), várias formas de fluxos são usadas​e é importante diferenciá-los, assim como suas unidades. Fluxos de massa (ou seja, usados​na equação <a href="balhid.html#eq:vol-control-int">(2.1)</a>) têm unidades de
+massa/tempo (por exemplo, kg s<sup>-1</sup>). Fluxos volumétricos (ou seja, usados​na Equação
+<a href="balhid.html#eq:estac">(2.5)</a> têm unidades de volume/tempo (por exemplo, m<sup>3</sup> s<sup>-1</sup>). Para converter entre os dois, a densidade do fluido pode ser usada, ou seja, para
+água:</p>
+<p><span class="math display">\[\frac{kg}{s} \times \frac{1}{\rho} = \frac{m^{3}}{s}; \rho = 1000\:   kg\:  m^{-3}\]</span></p>
+<p>Muitas vezes, a densidade de fluxo é usada no lugar do fluxo, que é simplesmente, ou o fluxo de massa ou volumétrico, normalizado pela área da seção transversal apropriada, através da qual o fluxo está ocorrendo, ou seja</p>
+<p><span class="math display">\[Massa: \frac{kg}{s} \times \frac{1}{A} \rightarrow \frac{kg}{m^{2}s}\]</span></p>
+<p><span class="math display">\[Volume: \frac{m^{3}}{s} \times \frac{1}{A} \rightarrow \frac{m}{s} ou \left ( \frac{mm}{dia}, \: \frac{m}{ano} \right )\]</span></p>
+<p>onde, como mostrado acima, se a densidade do fluxo de massa for conhecida, a densidade de fluxo volumétrico pode ser obtida dividindo-se pela
+densidade da água. A densidade de fluxo volumétrica é uma forma comum de expressar fluxos em hidrometeorologia. Por exemplo, a precipitação média anual em Santa Maria é 1100 mm ano<sup>-1</sup>, que está
+implícito ocorrer sobre uma determinada área. Para obter o fluxo volumétrico real seria necessário multiplicar pela área da superfície de Santa Maria-RS, sobre a qual a densidade de fluxo ocorre.</p>
+<p>Como será discutido em mais detalhes posteriormente, os fluxos de água e energia são diretamente relacionados. O exemplo mais relevante é que o fluxo de evaporação está diretamente ligado ao fluxo de calor associado a mudança de fase.
+Por exemplo, o fluxo de calor latente, associado à mudança de fase é simplesmente a densidade de fluxo de massa multiplicada pelo calor latente de vaporização:</p>
+<p><span class="math display">\[Fluxo\: de\: energia = \lambda_{v} \times Fluxo\: de\: massa; \lambda_{v} = 2,5 \times 10^6\: J\: kg^{-1}\]</span></p>
+<p>onde as unidades de W m<sup>-2</sup> são as mais comumente usadas para fluxos de energia (na verdade, densidades de fluxo) em hidrometeorologia.</p>
 
 <div class="rmdnote">
 <p>Um conceito útil envolvendo o tamanho dos reservatórios e os fluxos entre eles é o <span class="smallcaps">Tempo de Residência</span> <span class="math inline">\(T_{r}\)</span>. O <span class="math inline">\(T_{r}\)</span> [T] é uma medida de quanto tempo, em mmédia, uma molécula de água gasta dentro reservatório antes de mover-se para outro reservatório do <span class="smallcaps">Ciclo Hidrológico</span>. O <span class="math inline">\(T_{r}\)</span> é facilmente calculado para <strong>sistemas estacionários</strong>, ou seja quando o fluxo de entrada e saída são idênticos:</p>
@@ -223,9 +244,9 @@ Figura 2.11: Climatologia anual da Divergência horizontal do transporte de vapo
 Figura 2.12: Principais fluxos do ciclo hidrológico global. Os valores estão expressos em unidades relativas à Precipitação média anual nos continentes (100 u.r. = 119.000 km<sup>3</sup>). Setas pretas indicam fluxos para a atmosfera, setas cinzas indicar setas para o oceano ou continente e setas azuis idicam fluxos laterais. Adaptado de Maidment (1993).
 </p>
 </div>
-<p>Anualmente, <span class="math inline">\(\approx\)</span> 577150 km<sup>3</sup> ano<sup>-1</sup> de água (o que equivale<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> a 1132 mm), deixam a atmosfera na forma de <span class="smallcaps">Precipitação</span>. A mesma quantidade retorna para atmosfera anualmente como <span class="smallcaps">Evaporação</span>, por isso a quantidade de água na atmosfera não muda com o tempo e o ciclo hidrológico na escala global é fechado.</p>
+<p>Anualmente, <span class="math inline">\(\approx\)</span> 577150 km<sup>3</sup> ano<sup>-1</sup> de água (o que equivale<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> a 1132 mm), deixam a atmosfera na forma de <span class="smallcaps">Precipitação</span>. A mesma quantidade retorna para atmosfera anualmente como <span class="smallcaps">Evaporação</span>, por isso a quantidade de água na atmosfera não muda com o tempo e o ciclo hidrológico na escala global é fechado.</p>
 <p>A água não é uniformemente distribuída entre os continentes e o oceano. A <span class="smallcaps">Precipitação</span> média nos continente é 119000 km<sup>3</sup> (cerca de 21% da <span class="smallcaps">Precipitação</span> média global. Tomando este valor como unidade relativa (u.r) para os demais fluxos do balanço hídrico global (100 u.r = 119.000 km<sup>3</sup>), 61% desta precipitação (487 mm) evapora de volta para atmosfera.</p>
-<p>Nos oceanos a evaporação supera a precipitação, resultando em uma diferença de -39 u.r. Este excedente de evaporação dos oceanos (<span class="math inline">\(\approx\)</span> 9%) é transportado pelo vento para os continente e contribui para precipitação nos continentes<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>. No continente a precipitação excede a evapotranspiração gerando um excesso (39 u.r, ou 312 mm) que escoa em grande parte pela superfície e o subsolo para o oceano, reestabelecendo a maior perda de água por evaporação no oceano.</p>
+<p>Nos oceanos a evaporação supera a precipitação, resultando em uma diferença de -39 u.r. Este excedente de evaporação dos oceanos (<span class="math inline">\(\approx\)</span> 9%) é transportado pelo vento para os continente e contribui para precipitação nos continentes<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. No continente a precipitação excede a evapotranspiração gerando um excesso (39 u.r, ou 312 mm) que escoa em grande parte pela superfície e o subsolo para o oceano, reestabelecendo a maior perda de água por evaporação no oceano.</p>
 <p>O <em>runnof</em> total estimado é equivalente a 39% da precipitação continental, portanto um coeficiente de escoamento de 0,39. Esta quantidade representa o que é chamado convencionalmente de recursos hídricos renováveis. Mas nem toda esta quantidade é acessível para uso humano, porque parte da água escoa para rios remotos e parte da água das enchentes sazonais não podem ser capturadas antes de atingir os oceanos. De acordo com a FAO (2003), 9.000-14.000 km<sup>3</sup> (20-31% dos recursos hídricos renováveis) é o total de água economicamente disponível para o uso humano.</p>
 </div>
 </div>
@@ -240,9 +261,9 @@ Figura 2.12: Principais fluxos do ciclo hidrológico global. Os valores estão e
 </div>
 <div class="footnotes">
 <hr />
-<ol start="3">
-<li id="fn3"><p>Note que os fluxos podem ser expressos em lâmina de água equivalente, dividindo-se o volume pelas <a href="https://en.wikipedia.org/wiki/Earth">áreas consideradas</a> (Área da superfície da Terra = 510072000 km<sup>2</sup>, Área da superfície continental = 148940000 km<sup>2</sup>, Área da superfície oceânica = 361132000 km<sup>2</sup>).<a href="balhid.html#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p>Se esta fosse a única fonte de precipitação a média global da precipitação seria somente cerca de 233 mm, um valor típico de regiões semi-áridas e desertos.<a href="balhid.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<ol start="5">
+<li id="fn5"><p>Note que os fluxos podem ser expressos em lâmina de água equivalente, dividindo-se o volume pelas <a href="https://en.wikipedia.org/wiki/Earth">áreas consideradas</a> (Área da superfície da Terra = 510072000 km<sup>2</sup>, Área da superfície continental = 148940000 km<sup>2</sup>, Área da superfície oceânica = 361132000 km<sup>2</sup>).<a href="balhid.html#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Se esta fosse a única fonte de precipitação a média global da precipitação seria somente cerca de 233 mm, um valor típico de regiões semi-áridas e desertos.<a href="balhid.html#fnref6" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

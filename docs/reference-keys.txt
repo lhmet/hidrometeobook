@@ -5,13 +5,15 @@ fig:sealevel
 fig:wateravail
 tab:water-earth-table
 fig:CH-estrutura-molec-agua
-fig:pqgeloflutua
 fig:CH-diag-fases-agua
+fig:CH-dens-agua-gelo
+fig:pqgeloflutua
 fig:volcontrol
 eq:vol-control-int
 eq:mass-bal-int
 eq:contin1
 eq:contin2
+eq:estac
 fig:clima-agua-precip
 fig:div-hor-vapor
 fig:balan-global
@@ -28,8 +30,8 @@ interação-entre-rios-e-oceanos
 distribuição-global-de-água
 propriedades-da-água
 estrutura-molecular-da-água
-densidade-da-água
 mudanças-de-fase-da-água
+densidade-da-água
 capacidade-térmica
 calor-latente
 balhid
@@ -57,4 +59,3 @@ evapo
 evapotranspiração-de-referência
 evapotranspiração-da-cultura
 evapotranspiração-real
-fig:CH-dens-agua-gelo
