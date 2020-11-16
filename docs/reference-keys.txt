@@ -19,7 +19,7 @@ eq:medtemp
 eq:bmassglobmed
 eq:bmassglobestac
 eq:bmassglobestac2
-tab:water-earth-table1
+tab:water-earth-table2
 fig:balan-global
 fig:clima-agua-precip
 fig:div-hor-vapor

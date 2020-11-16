@@ -445,7 +445,7 @@ onde as unidades de W m^-2^ são as mais comumente usadas para fluxos de energia
 
 ### Balanço Hídrico Global {#BHglobal}
 
-Para termos uma melhor noção dasescalas de tempo dos fluxos hidrológicos e do balanço de massa, é instrutivo começar na escala global. Se considerarmos um volume de controle cobrindo toda a superfície do globo ((Figura \@ref(fig:balan-global))), os fluxos relevantes através da superfície de controle são a precipitação e a evapotranspiração no continente e no oceano. Note que o escoamento entre o continente e o oceano é um fluxo interno e, portanto, não é relevante para o balanço de massa do volume de controle que escolhemos (retângulo vermelho). O balanço global instantâneo de massa (ou de volume) pode então ser escrito como:
+Para termos uma melhor noção dasescalas de tempo dos fluxos hidrológicos e do balanço de massa, é instrutivo começar na escala global. Se considerarmos um volume de controle cobrindo toda a superfície do globo (Figura \@ref(fig:balan-global)), os fluxos relevantes através da superfície de controle são a precipitação e a evapotranspiração no continente e no oceano. Note que o escoamento entre o continente e o oceano é um fluxo interno e, portanto, não é relevante para o balanço de massa do volume de controle que escolhemos (retângulo vermelho). O balanço global instantâneo de massa (ou de volume) pode então ser escrito como:
 
 \begin{equation}
   \frac{dS}{dt} = P_{con} - ET_{con} + P_{oce} - ET_{oce}
@@ -505,19 +505,16 @@ O $T_{r}$ fornece um indicação do tempo necessário para substituir toda água
 A determinação do $T_{r}$ dos oceanos é complicada pelo fato há uma camada relativamente rasa (da ordem de 100 m de profundidade) que interage prontamente com os reservatórios atmosfericos e terrestres, mas esta camada está sobre uma camada muito mais profunda e isolada de água salina que move-se lentamente.</div>\EndKnitrBlock{rmdnote}
 
 Dada esta taxa, podemos estimar o tempo médio de residência nos vários reservatórios. Com as estimativas dos volumes dos reservatórios 
-(Tabela \@ref(tab:water-earth-table))), os tempos de residência podem ser estimados e são mostrados na Tabela \@ref(tab:water-earth-table2)). 
+(Tabela \@ref(tab:water-earth-table)), os tempos de residência podem ser estimados e são mostrados na Tabela \@ref(tab:water-earth-table2). 
 
 
 
 
 
-```
-## [1] 952.9412
-```
 
 
 
-Table: (\#tab:water-earth-table1)Estimativas dos tempo de residência nos principais reservatórios hidrológicos globais. Estes valores assumem uma taxa média global de fluxo hidrológico de 1332 km^3^ dia^-1^. Adaptado de @Trenberth2007.
+Table: (\#tab:water-earth-table2)Estimativas dos tempo de residência nos principais reservatórios hidrológicos globais. Estes valores assumem uma taxa média global de fluxo hidrológico de 1332 km^3^ dia^-1^. Adaptado de @Trenberth2007.
 
 |Reservatório               | Volume (Km^3^)| Tempo de residência|unidade |
 |:--------------------------|--------------:|-------------------:|:-------|
