@@ -476,15 +476,167 @@ $$Fluxo\: de\: energia = \lambda_{v} \times Fluxo\: de\: massa; \lambda_{v} = 2,
 onde as unidades de W m^-2^ são as mais comumente usadas para fluxos de energia (na verdade, densidades de fluxo) em hidrometeorologia.
 
 
+
+
+
+### Balanço Hídrico Global {#BHglobal}
+
+Para termos uma melhor noção dasescalas de tempo dos fluxos hidrológicos e do balanço de massa, é instrutivo começar na escala global. Se considerarmos um volume de controle cobrindo toda a superfície do globo ((Figura \@ref(fig:balan-global))), os fluxos relevantes através da superfície de controle são a precipitação e a evapotranspiração no continente e no oceano. Note que o escoamento entre o continente e o oceano é um fluxo interno e, portanto, não é relevante para o balanço de massa do volume de controle que escolhemos (retângulo vermelho). O balanço global instantâneo de massa (ou de volume) pode então ser escrito como:
+
+\begin{equation}
+  \frac{dS}{dt} = P_{con} - ET_{con} + P_{oce} - ET_{oce}
+  (\#eq:balmassglob)
+\end{equation}
+
+<!-- Equação \@ref(eq:balmassglob) -->
+
+onde S representa a massa ou volume armazenado nos reservatórios de água do oceano e continente com unidades consistentes (em termos de massa ou volume). Dada a equação acima, se todos os fluxos instantâneos forem conhecidos, então a variação do armazenamento pode ser determinada. Alternativamente, se a variação de armazenamento for conhecida e todos os fluxos, exceto um, forem conhecidos, a equação pode ser usada para resolver o fluxo desconhecido como resíduo da Equação \@ref(eq:balmassglob).
+
+Na prática, os termos do balanço de massa instantâneo são difíceis, senão impossíveis, de se estimar com precisão (especialmente em grandes escalas). Portanto, para simplificar a análise hidrológica, muitas vezes usamos a **média de longo prazo** da equação de balanço de massa acima, onde podemos usar o operador de média de tempo:
+
+\begin{equation}
+ \bar{X} = \frac{1}{T}\int_{t}^{t+T} X \, dt
+  (\#eq:medtemp)
+\end{equation}
+
+
+onde T é um intervalo temporal e a equação acima pode ser aplicada a cada termo na equação de balanço de massa:
+
+\begin{equation}
+  \bar{\frac{dS}{dt}} = \bar{P}_{con} - \bar{ET}_{con} + \bar{P}_{oce} - \bar{ET}_{oce}
+  (\#eq:bmassglobmed)
+\end{equation}
+
+A questão então é: se o período de média for longo o suficiente, podemos dizer algo sobre qualquer um desses termos? No longo prazo, podemos dizer razoavelmente que a variação (média) do armazenamento deve ser próxima de zero ou pelo menos muito menor do que os fluxos médios. Isso implicitamente assume alguma estacionariedade no sistema (ou seja, é um estado estacionário no longo prazo). Em geral, quanto mais longo for o período da média, mais precisa será a suposição. No mínimo um ano deve ser usado para Obter a média ao longo do ciclo sazonal (ou seja, a maioria das regiões tem uma estação chuvosa onde o armazenamento de água aumenta e uma estação seca onde ele dimuninui). Qualquer período menor seria considerado uma violação da suposição de estado estacionário.
+
+Tirando a média de longo prazo resulta em:
+
+
+\begin{equation}
+  \bar{\frac{dS}{dt}} \approx 0 = \bar{P}_{con} - \bar{ET}_{con} + \bar{P}_{oce} - \bar{ET}_{oce} = \bar{P}_{glob} - \bar{ET}_{glob}
+  (\#eq:bmassglobestac)
+\end{equation}
+
+   
+
+\begin{equation}
+  \rightarrow \bar{P}_{glob} = \bar{ET}_{glob}
+  (\#eq:bmassglobestac2)
+\end{equation}
+
+
+o que deveria fazer sentido porque, se esses fluxos não estivessem em equilíbrio, a água estaria se acumulando a longo prazo na atmosfera (se a evapotranspiração excedesse a precipitação) ou no continente/oceano (se a precipitação excedesse a evapotranspiração). A partir dos dados, estima-se que:
+
+$$\bar{P}_{glob} = \bar{ET}_{glob} \approx 953\: mm\: ano^{-1}$$
+
+onde esse valor está expresso em termos de uma densidade de fluxo volumétrico (ou seja, normalizado pela superfície da Terra). Em fluxo volumétrico, seria igual a 1332 km^3^ dia^-1^. Podemos pensar neste fluxo como a taxa média global do ciclo hidrológico. Em outras palavras, esta é a quantidade média de água que se move através dos vários reservatórios hidrológicos. Observe que os fluxos instantâneos em qualquer ponto e tempo podem ser muito diferente (como será discutido mais tarde). 
+
+
 ```{block2, tempo-residencia, type='rmdnote', echo = TRUE}
 Um conceito útil envolvendo o tamanho dos reservatórios e os fluxos entre eles é o <span style="font-variant:small-caps;">Tempo de Residência</span> $T_{r}$. O $T_{r}$ [T] é uma medida de quanto tempo, em mmédia, uma molécula de água gasta dentro reservatório antes de mover-se para outro reservatório do <span style="font-variant:small-caps;">Ciclo Hidrológico</span>. O $T_{r}$ é facilmente calculado para **sistemas estacionários**, ou seja quando o fluxo de entrada e saída são idênticos:
 
 $$T_{r} = \frac{V}{F} \; \left [ \frac{L^{3}}{L^{3}.T^{-1}} \right ]$$
 
-O $T_{r}$ fornece um indicação do tempo necessário para substituir toda água do reservatório. A água nos oceanos tem um tempo de residência de $\approx$ 3000 anos, enquanto o da água dos rios é de 0,05 anos ou  $\approx$ 17 dias. O $T_{r}$ água na atmosfera é de somente 0,02 anos (ou $\approx$ 8 dias), ou seja, um dos reservatórios mais dinâmicos do ciclo hidrológico e contribui muito para a variabilidade do sistema. 
+O $T_{r}$ fornece um indicação do tempo necessário para substituir toda água do reservatório. A água nos oceanos tem um tempo de residência de $\approx$ 2600 anos, enquanto o da água dos rios, lagos e áreas úmidas é de  $\approx$ 134 dias. O $T_{r}$ água na atmosfera é de somente $\approx$ 10 dias, ou seja, um dos reservatórios mais dinâmicos do ciclo hidrológico e contribui muito para a variabilidade do sistema. 
 
 A determinação do $T_{r}$ dos oceanos é complicada pelo fato há uma camada relativamente rasa (da ordem de 100 m de profundidade) que interage prontamente com os reservatórios atmosfericos e terrestres, mas esta camada está sobre uma camada muito mais profunda e isolada de água salina que move-se lentamente.
 ```
+
+Dada esta taxa, podemos estimar o tempo médio de residência nos vários reservatórios. Com as estimativas dos volumes dos reservatórios 
+(Tabela \@ref(tab:water-earth-table))), os tempos de residência podem ser estimados e são mostrados na Tabela \@ref(tab:water-earth-table2)). 
+
+
+
+
+```{r water-earth-table2, echo = FALSE}
+prec_trenb <- (113 + 373)*10^3 # km3/ano
+area_terra <- 510*10^6 
+prec_trenb/area_terra * 10^6
+
+water_earth2 <- slice(water_earth, -2) %>%
+  select(-(3:4))
+
+flux <- round(prec_trenb/365) #1415
+tempos_resid_an <- water_earth2[[2]]/(flux*365)
+#format(tempos_resid, digits = 10, nsmall = 1)
+tempos_resid_an[2] <- NA
+tempos_resid_an[4:6] <- tempos_resid_an[4:6] * 365
+
+water_earth2 <- water_earth2 %>%
+  mutate(
+  `Tempo de residência` = round(tempos_resid_an),#c("2500 anos", "-", "8 anos", "88 dias", "47 dias", "9 dias")
+  unidade = c(rep("anos", 3), rep("dias", 3))
+)
+```
+
+
+```{r water-earth-table1, encoding = "UTF-8"}
+#load("data/water_earth.rda")
+knitr::kable(
+  water_earth2,
+  caption = "Estimativas dos tempo de residência nos principais reservatórios hidrológicos globais. Estes valores assumem uma taxa média global de fluxo hidrológico de 1332 km^3^ dia^-1^. Adaptado de @Trenberth2007.",
+  booktabs = TRUE,
+  row.names = FALSE,
+  # align = "r",
+  format.args = list(
+    big.mark = ".",
+    decimal.mark = ",",
+    na.encode = TRUE
+  )
+)
+```
+
+
+É muito importante ter em mente que os números acima  são médias globais de longo prazo. Variabilidade significativa existe na maioria dos fluxos hidrológicos, tanto no espaço quanto no tempo.
+
+
+Na verdade, é justamente essa variabilidade que deve ser acomodada por projetos de sistemas hídricos. Alguns exemplos interessantes para
+ilustrar a variabilidade espacial, incluem os lugares mais secos e mais úmidos da Terra. Para ilustração, podemos comparar a precipitação média de longo prazo como
+uma medida representativa da hidrologia local. Por exemplo, Los Angeles recebe uma média de 380 mm ano^-1^, tornando-a um local relativamente seco. No entanto, o lugar mais seco da Terra é o Deserto do Atacama, no Chile. Em partes do Atacama nunca houve foi registrado chuva, e sobre todo o deserto, a média das chuvas é menos de 1 mm ano^-1^! A falta de água contribui para um
+paisagem particularmente rígida com pouca ou nenhuma vida, ao ponto
+que muitas vezes é comparada à superfície de Marte.
+
+
+Em contraste, o lugar "mais úmido" da Terra é geralmente
+considerado Cherrapunji, Índia, que recebe uma precipitação média anual de 11100 mm ano^-1^. Além disso, devido ao clima de monções, a maior parte dessa chuva ocorre na estação chuvosa que dura de 3 a 6 meses. Tendo em mente que esta é a média de longo prazo, outro exemplo interessante é a precipitação máxima anual observada em Cherrapunji, que foi de 26500 mm! Esses dois exemplos fornecem extremidades interessantes do espectro hidrológico, onde em um a água é extremamente escassa, tornando o abastecimento hídrico um problema crítico. No outro, o excesso de água causa problemas extremos de inundação. Além desses dois
+exemplos de extrema variabilidade espacial hidrológica, é
+importante ter em mente a variabilidade temporal. Por
+exemplo, a maior parte dos 380 mm anuais de precipitação em Los Angeles ocorre no inverno (dezembro-março), que contrasta com Cherrapunji, que recebe quase toda chuva durante o verão. Ao fazer qualquer análise hidrológica, é importante
+definir claramente as escalas espaciais e temporais relevantes de
+interesse.
+
+
+### Análise quantitativa dos fluxos hidrológicos globais 
+
+
+<!-- A partição da água entre as componentes do ciclo hidrológico para o sistema terrestre global constitui o balanço hídrico global (Figura \@ref(fig:balan-global)). A quantidade de água e sua transferência pode ser medida em termos de volume (m^3^), profundidade (m), massa ou mols (mol) por unidade de área. Essas grandezas são relacionadas pela densidade da água (1 m^3^ H~2~O = 1000 kg) e pela massa molecular da água (1 mol H~2~O = 18 g). Um kg de água espalhado sobre uma área  de m^2^ é equivalente a profundidade de `r round((1/1000)/1 * 1000)` mm, um volume de `r gsub("\\.", ",", round(1/1000, 3))` m^3^ e `r gsub("\\.", ",", round(1000/18, 1))` mol m^-2^. -->
+
+
+
+(ref:balan-global) Principais fluxos do ciclo hidrológico global. Os valores estão expressos em unidades relativas à Precipitação média anual nos continentes (100 u.r. = 119.000 km^3^). Setas pretas indicam fluxos para a atmosfera, setas cinzas indicar setas para o oceano ou continente e setas azuis idicam fluxos laterais. Adaptado de Maidment (1993).
+
+```{r balan-global, fig.align='center', out.width='70%', fig.cap='(ref:balan-global)'}
+knitr::include_graphics('images/2-balanco-global.png')
+```
+
+```{r, include = FALSE}
+#Um aspecto importante do cilo hidrológico é que em escala global o sistema é essencialmente fechado com respeito a água. Uma quantidade desprezível está entrando ou saindo do sistema. Em outras palavras, não há forçante externa em termos de fluxo de água e nestes casos,  o sistema geralmente tende a atingir um estado de equilíbrio.
+```
+
+Anualmente, $\approx$ `r sprintf("%i", round((1+3.85)*119000))` km^3^ ano^-1^ de água (o que equivale[^6] a `r round((1+3.85)*119000/(510072000) * 1000 * 1000)` mm), deixam a atmosfera na forma de `r small_caps("Precipitação")`. A mesma quantidade retorna para atmosfera anualmente como `r small_caps("Evaporação")`, por isso a quantidade de água na atmosfera não muda com o tempo e o ciclo hidrológico na escala global é fechado.
+
+
+[^6]: Note que os fluxos podem ser expressos em lâmina de água equivalente, dividindo-se o volume pelas [áreas consideradas](https://en.wikipedia.org/wiki/Earth) (Área da superfície da Terra = 510072000 km^2^, Área da superfície continental = 148940000 km^2^, Área da superfície oceânica = 361132000 km^2^). 
+
+
+A água não é uniformemente distribuída entre os continentes e o oceano. A `r small_caps("Precipitação")` média nos continente é 119000 km^3^ (cerca de `r  round(119000/577150 * 100)`% da `r small_caps("Precipitação")` média global. Tomando este valor como unidade relativa (u.r) para os demais fluxos do balanço hídrico global (100 u.r = 119.000 km^3^), 61% desta precipitação (`r round((0.61)*119000/(148940000) * 1000 * 1000)` mm) evapora de volta para atmosfera. 
+
+Nos oceanos a evaporação supera a precipitação, resultando em uma diferença de -39 u.r. Este excedente de evaporação dos oceanos ($\approx$ `r round(39/424 * 100)`%) é transportado pelo vento para os continente e contribui para  precipitação nos continentes[^9]. No continente a precipitação excede a evapotranspiração gerando um excesso (39 u.r, ou `r round((0.39)*119000/(148940000) * 1000 * 1000)` mm) que escoa em grande parte pela superfície e o subsolo para o oceano, reestabelecendo a maior perda de água por evaporação no oceano. 
+
+[^9]: Se esta fosse a única fonte de precipitação a média global da precipitação seria somente cerca de `r round(119000/(510072000) * 1000 * 1000)` mm, um valor típico de regiões semi-áridas e desertos.
+
+O *runnof* total estimado é equivalente a 39% da precipitação continental, portanto um coeficiente de escoamento de 0,39. Esta quantidade representa o que é chamado convencionalmente de recursos hídricos renováveis. Mas nem toda esta quantidade é acessível para uso humano, porque parte da água escoa para rios remotos e parte da água das enchentes sazonais não podem ser capturadas antes de atingir os oceanos. De acordo com a FAO (2003), 9.000-14.000 km^3^ (20-31% dos recursos hídricos renováveis) é o total de água economicamente disponível para o uso humano. 
+
 
 ### Balanço Hídrico Atmosférico
 
@@ -519,41 +671,6 @@ Figura \@ref(fig:div-hor-vapor).
 ```{r div-hor-vapor, fig.align='center', out.width='100%', fig.cap='(ref:div-hor-vapor)'}
 knitr::include_graphics('images/DivFluxVaporAnual-Peixoto.jpg')
 ```
-
-
-
-
-### Balanço Hídrico Global {#BHglobal}
-
-A partição da água entre as componentes do ciclo hidrológico para o sistema terrestre global constitui o balanço hídrico global (Figura \@ref(fig:balan-global)). A quantidade de água e sua transferência pode ser medida em termos de volume (m^3^), profundidade (m), massa ou mols (mol) por unidade de área. Essas grandezas são relacionadas pela densidade da água (1 m^3^ H~2~O = 1000 kg) e pela massa molecular da água (1 mol H~2~O = 18 g). Um kg de água espalhado sobre uma área  de m^2^ é equivalente a profundidade de `r round((1/1000)/1 * 1000)` mm, um volume de `r gsub("\\.", ",", round(1/1000, 3))` m^3^ e `r gsub("\\.", ",", round(1000/18, 1))` mol m^-2^.
-
-
-
-(ref:balan-global) Principais fluxos do ciclo hidrológico global. Os valores estão expressos em unidades relativas à Precipitação média anual nos continentes (100 u.r. = 119.000 km^3^). Setas pretas indicam fluxos para a atmosfera, setas cinzas indicar setas para o oceano ou continente e setas azuis idicam fluxos laterais. Adaptado de Maidment (1993).
-
-```{r balan-global, fig.align='center', out.width='70%', fig.cap='(ref:balan-global)'}
-knitr::include_graphics('images/2-balanco-global.png')
-```
-
-```{r, include = FALSE}
-#Um aspecto importante do cilo hidrológico é que em escala global o sistema é essencialmente fechado com respeito a água. Uma quantidade desprezível está entrando ou saindo do sistema. Em outras palavras, não há forçante externa em termos de fluxo de água e nestes casos,  o sistema geralmente tende a atingir um estado de equilíbrio.
-```
-
-Anualmente, $\approx$ `r sprintf("%i", round((1+3.85)*119000))` km^3^ ano^-1^ de água (o que equivale[^6] a `r round((1+3.85)*119000/(510072000) * 1000 * 1000)` mm), deixam a atmosfera na forma de `r small_caps("Precipitação")`. A mesma quantidade retorna para atmosfera anualmente como `r small_caps("Evaporação")`, por isso a quantidade de água na atmosfera não muda com o tempo e o ciclo hidrológico na escala global é fechado.
-
-
-[^6]: Note que os fluxos podem ser expressos em lâmina de água equivalente, dividindo-se o volume pelas [áreas consideradas](https://en.wikipedia.org/wiki/Earth) (Área da superfície da Terra = 510072000 km^2^, Área da superfície continental = 148940000 km^2^, Área da superfície oceânica = 361132000 km^2^). 
-
-
-A água não é uniformemente distribuída entre os continentes e o oceano. A `r small_caps("Precipitação")` média nos continente é 119000 km^3^ (cerca de `r  round(119000/577150 * 100)`% da `r small_caps("Precipitação")` média global. Tomando este valor como unidade relativa (u.r) para os demais fluxos do balanço hídrico global (100 u.r = 119.000 km^3^), 61% desta precipitação (`r round((0.61)*119000/(148940000) * 1000 * 1000)` mm) evapora de volta para atmosfera. 
-
-Nos oceanos a evaporação supera a precipitação, resultando em uma diferença de -39 u.r. Este excedente de evaporação dos oceanos ($\approx$ `r round(39/424 * 100)`%) é transportado pelo vento para os continente e contribui para  precipitação nos continentes[^9]. No continente a precipitação excede a evapotranspiração gerando um excesso (39 u.r, ou `r round((0.39)*119000/(148940000) * 1000 * 1000)` mm) que escoa em grande parte pela superfície e o subsolo para o oceano, reestabelecendo a maior perda de água por evaporação no oceano. 
-
-[^9]: Se esta fosse a única fonte de precipitação a média global da precipitação seria somente cerca de `r round(119000/(510072000) * 1000 * 1000)` mm, um valor típico de regiões semi-áridas e desertos.
-
-O *runnof* total estimado é equivalente a 39% da precipitação continental, portanto um coeficiente de escoamento de 0,39. Esta quantidade representa o que é chamado convencionalmente de recursos hídricos renováveis. Mas nem toda esta quantidade é acessível para uso humano, porque parte da água escoa para rios remotos e parte da água das enchentes sazonais não podem ser capturadas antes de atingir os oceanos. De acordo com a FAO (2003), 9.000-14.000 km^3^ (20-31% dos recursos hídricos renováveis) é o total de água economicamente disponível para o uso humano. 
-
-
 
 
 ## Bacia Hidrográfica
