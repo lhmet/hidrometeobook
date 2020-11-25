@@ -694,6 +694,7 @@ Outra limitação do modelo de BH topográfica é que fatores antropogênicos n�
 
 ### Delimitação da Bacia Hidrográfica
 
+![](images/all_frames.gif)<!-- -->
 
 
 

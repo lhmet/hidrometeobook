@@ -757,6 +757,9 @@ knitr::include_graphics('images/bacia-modificada.png')
 
 ### Delimitação da Bacia Hidrográfica
 
+```{r animacao}
+knitr::include_graphics("images/all_frames.gif")
+```
 
 
 ```{r, eval = FALSE, include = FALSE}
